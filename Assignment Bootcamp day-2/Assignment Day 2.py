@@ -74,6 +74,6 @@
 # print("Content of the file:")
 # print(content)
 
-## Question 6 : create a text file called sample.txt    ##
+
 
 
