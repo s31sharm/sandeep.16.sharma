@@ -42,7 +42,10 @@ from pyodbc import lowercase
 ## Q3 - Reverse String Function ##
 
 # def reverse_string (s):
-#     return s[::-1]
+#         rstring = ""
+#         for char in s:
+#             rstring=char+rstring
+#         return rstring
 #
 # string_new = input("Enter String to reverse :")
 # Reversed = reverse_string(string_new)
@@ -50,15 +53,18 @@ from pyodbc import lowercase
 # print("Reverse of entered string is : ", Reversed)
 
 ## Q4 Python function to calculate the factorial of a number ##
-
+#
 # def Factorial_New(n):
-#     return n*Factorial_New(n - 1)
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return n*Factorial_New(n-1)
 #
 # u_input = int(input("Enter a number to calculate factorial:"))
-# output = Factorial_New(u_input)
 # if u_input<0:
 #     print("Error Due to Negative Value")
-# else:
+# else :
+#     output = Factorial_New(u_input)
 #     print("Factorial of ",u_input," is ",output)
 
 
@@ -122,4 +128,15 @@ from pyodbc import lowercase
 
 ## Q-10 Palindrome ##
 
-# def is_palindrome(s):
+# def palindrome(s):
+#     reversed_string = ""
+#     for char in s:
+#         reversed_string = char + reversed_string
+#     return s==reversed_string
+#
+#
+# string_new = input("Enter String to check palindrome :")
+# if palindrome(string_new):
+#     print("Given string is a palindrome")
+# else:
+#     print("Given String is not a palindrome")
